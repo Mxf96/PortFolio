@@ -1,0 +1,73 @@
+/* Style pour la section "À propos" */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0 15%;
+}
+
+/* Style pour le contenu de la section "À propos" */
+.about-content {
+    flex: 1;
+    max-width: 60%; /* Ajustez selon la largeur souhaitée pour le texte */
+    padding-right: 20px; /* Espace entre le texte et l'image du CV */
+}
+
+/* Style pour la partie CV */
+.about-cv {
+    flex: 1;
+    text-align: center; /* Centrer l'image du CV */
+    position: relative; /* Nécessaire pour positionner correctement le pop-up */
+}
+
+/* Style pour l'image du CV */
+.cv-image {
+    width: 100%;
+    max-width: 200px; /* Ajustez selon la taille souhaitée de l'image du CV */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Effet d'agrandissement au survol */
+.cv-image:hover {
+    transform: scale(1.5); /* Agrandit l'image au survol */
+}
+
+/* Style pour l'overlay du CV */
+.cv-overlay {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Overlay en plein écran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fond sombre semi-transparent */
+    z-index: 1000; /* S'assurer que l'overlay est au-dessus des autres éléments */
+}
+
+.cv-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.cv-large {
+    max-width: 100%; /* Ajustez selon la largeur souhaitée de l'image agrandie */
+    max-height: 90vh; /* Ajustez selon la hauteur souhaitée de l'image agrandie */
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}

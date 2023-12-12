@@ -1,0 +1,123 @@
+/* Style général */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1,h2,h3,p,a,ul,li,i,img,span {
+    caret-color: transparent; /* Rend le curseur de saisie invisible */
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section principale */
+section {
+    padding: 20px;
+    margin: 0 15% 1% ;
+}
+
+/* À propos de moi */
+#about {
+    text-align: center;
+}
+
+/* Projets */
+#projects article {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#projects h3 {
+    margin-top: 0;
+}
+
+/* Compétences */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+/* Contact */
+#contact form {
+    width: 70%;
+    margin: auto;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#contact input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: #0077b5;
+}

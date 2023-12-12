@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/skills.css">
+    <link rel="stylesheet" href="/assets/css/form.css">
+    <link rel="stylesheet" href="/assets/css/project.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="about-content">
+            <h1>À propos de moi</h1>
+            <p>Je suis Maxime FALCETTA, un passionné Développeur Web. J'ai obtenu un titre RNCP de niveau 5 équivalent à un Bac+2, consolidant mes connaissances et compétences dans ce domaine dynamique. Ma formation s'est déroulée à la Metz Numeric School, où j'ai acquis une année d'expérience intensive en développement web.</p>
+        </div>
+        <div class="about-cv">
+            <img src="/assets/picture/C.V.png" alt="CV de Maxime FALCETTA" class="cv-image">
+            <div class="cv-overlay" id="cvOverlay">
+                <div class="cv-popup">
+                    <img src="/assets/picture/C.V.png" alt="CV Agrandi de Maxime FALCETTA" class="cv-large">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>        
+    </section>        
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <article>
+            <div class="project-content">
+                <h3>SpeakEasy</h3>
+                <p>Projet Fil Rouge en PHP. Une application dédiée à la facilitation de la communication.</p>
+                <a href="https://github.com/Mxf96/SpeakEasy" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
+            </div>
+            <div class="project-image">
+                <img src="/assets/picture/SpeakEasy.png" alt="SpeakEasy Project Image">
+            </div>
+        </article> 
+        <article>
+            <div class="project-content">
+                <h3>Quiz-XV-de-France</h3>
+                <p>AdverGame Challenge 2023 en PHP. Un jeu de quiz interactif sur le rugby.</p>
+                <a href="https://github.com/Mxf96/Quiz-XV-de-France" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
+            </div>
+            <div class="project-image">
+                <img src="/assets/picture/Rugby Word Cup 2023.png" alt="Quiz XV de France Project Image">
+            </div>
+        </article>
+        <article>
+            <div class="project-content">
+                <h3>AzerType</h3>
+                <p>Projet OpenClassRooms en JavaScript. Un jeu pour améliorer la vitesse de frappe au clavier.</p>
+                <a href="https://github.com/Mxf96/AzerType" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
+            </div>
+            <div class="project-image">
+                <img src="/assets/picture/azerty-deltbg.png" alt="AzerType Project Image">
+            </div>
+        </article>
+        <article>
+            <div class="project-content">
+                <h3>Pharamacie-Naturabio</h3>
+                <p>Projet E-Commerce en PHP. Un site web pour une pharmacie proposant des produits naturels.</p>
+                <a href="https://github.com/Mxf96/Pharamacie-Naturabio" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
+            </div>
+            <div class="project-image">
+                <img src="/assets/picture/Pharma.png" alt="Pharamacie Naturabio Project Image">
+            </div>
+        </article>
+    </section>    
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="skills-category">
+            <h3>Front-end</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Back-end</h3>
+            <ul>
+                <li>Node.js</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Base de Données</h3>
+            <ul>
+                <li>phpMyAdmin (MariaDB)</li>
+                <li>Firebase</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Outils de Conception et Développement</h3>
+            <ul>
+                <li>Figma</li>
+                <li>WAMP Server</li>
+                <li>Visual Studio Code</li>
+                <li>Oracle VM</li>
+                <li>PuTTY</li>
+                <li>WinSCP</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Outils Graphiques et Créatifs</h3>
+            <ul>
+                <li>Canva</li>
+                <li>Dalle 3</li>
+            </ul>
+        </div>
+        <div class="skills-category">
+            <h3>Gestion de Version</h3>
+            <ul>
+                <li>GitHub</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="process-form.php" method="post">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>© 2023 Maxime FALCETTA. Tous droits réservés.</p>
+        <a href="https://www.linkedin.com/in/maxime-falcetta/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Mxf96" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+        </a>
+    </footer>
+</body>
+<script src="/script.js"></script>
+</html>
