@@ -12,9 +12,9 @@ Ce repository contient le code source de mon portfolio personnel. Ce portfolio a
 
 ## Aperçu du Portfolio
 
-Vous pouvez accéder à mon portfolio en ligne à l'adresse suivante : [Lien vers votre portfolio]
+Vous pouvez accéder à mon portfolio en ligne à l'adresse suivante : [https://mxf96.github.io/PortFolio/]
 
-![Aperçu du Portfolio](lien_vers_une_image_du_portfolio)
+![Aperçu du Portfolio](/assets/picture/Visuelle%20PortFolio.png)
 
 ## Comment utiliser ce Repository
 
