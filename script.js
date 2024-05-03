@@ -33,3 +33,27 @@ window.addEventListener('click', function(event) {
         cvOverlay.style.display = 'none';
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll('[data-popup]');
+    const popup = document.createElement('div');
+    popup.className = 'popup';
+    const overlay = document.createElement('div');
+    overlay.className = 'popup-overlay';
+    document.body.appendChild(popup);
+    document.body.appendChild(overlay);
+
+    items.forEach(item => {
+        item.addEventListener('click', function() {
+            popup.textContent = this.getAttribute('data-popup');
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+    });
+
+    overlay.addEventListener('click', function() {
+        popup.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+});

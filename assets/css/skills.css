@@ -1,46 +1,49 @@
 /* Section Compétences */
 #skills {
     background-color: #f7f7f7;
-    padding: 40px; /* Augmenter le padding pour plus d'espace */
-    border-radius: 15px; /* Coins plus arrondis pour un look moderne */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre plus douce et plus large */
-    text-align: center; /* Centrer le texte pour une meilleure présentation */
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
 #skills h2 {
     color: #333;
-    margin-bottom: 30px; /* Espace supplémentaire sous le titre */
-    font-size: 2em; /* Augmenter la taille du titre */
+    margin-bottom: 30px; 
+    font-size: 2em; 
 }
 
 .skills-category {
-    margin-bottom: 30px; /* Espace supplémentaire entre les catégories */
+    margin-bottom: 30px;
 }
 
 .skills-category h3 {
     color: #444;
-    margin-bottom: 15px; /* Espace supplémentaire sous le sous-titre */
-    font-size: 1.5em; /* Augmenter la taille du sous-titre */
+    margin-bottom: 15px; 
+    font-size: 1.5em;
 }
 
 .skills-category ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Espace uniforme entre les compétences */
+    gap: 10px; 
 }
 
 .skills-category ul li {
     background-color: #333;
     color: #fff;
-    padding: 8px 20px; /* Plus de padding pour un meilleur aspect visuel */
-    border-radius: 10px; /* Coins plus arrondis */
-    font-size: 1em; /* Taille de police standard pour une meilleure lisibilité */
-    transition: background-color 0.3s; /* Transition douce pour les interactions */
+    padding: 8px 20px;
+    border-radius: 10px; 
+    font-size: 1em;
+    transition: background-color 0.3s; 
+    cursor: pointer; /* Ajouté pour assurer que le curseur change au survol */
 }
 
 .skills-category ul li:hover {
-    background-color: #555; /* Changement de couleur au survol */
+    background-color: #555;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: medium;
 }
