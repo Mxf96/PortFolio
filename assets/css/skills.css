@@ -54,7 +54,7 @@
 /* Média queries pour tablette */
 @media (min-width: 480px) {
     .skills-category ul li {
-        flex: 1 1 calc(30% - 20px); /* 2 éléments par ligne */
+        flex: 1 1 calc(10% - 20px); /* 2 éléments par ligne */
     }
 }
 
