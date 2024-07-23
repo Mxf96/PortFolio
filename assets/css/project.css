@@ -5,11 +5,12 @@
     background: #fff;
     padding: 20px;
     border: 1px solid #ddd;
+    flex-wrap: wrap; /* Permettre l'emballage des éléments sur plusieurs lignes si nécessaire */
 }
 
 .project-content {
     flex: 1;
-    padding-right: 20px; 
+    padding-right: 20px;
 }
 
 .project-image {
@@ -34,4 +35,22 @@
 #projects a {
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Media query pour les écrans mobiles */
+@media (max-width: 426px) {
+    #projects article {
+        flex-direction: column; /* Disposer les éléments verticalement */
+        align-items: flex-start; /* Aligner les éléments au début de la section */
+    }
+
+    .project-content {
+        padding-right: 0; /* Enlever le padding à droite */
+        margin-bottom: 20px; /* Ajouter de l'espace entre le texte et l'image */
+    }
+
+    .project-image {
+        width: 100%; /* Prendre toute la largeur disponible */
+        flex-basis: auto; /* Ajuster la largeur automatiquement */
+    }
 }

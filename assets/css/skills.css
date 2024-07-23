@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     gap: 10px; 
+    flex-wrap: wrap; /* Ajouté pour permettre l'emballage sur plusieurs lignes */
 }
 
 .skills-category ul li {
@@ -39,6 +40,8 @@
     font-size: 1em;
     transition: background-color 0.3s; 
     cursor: pointer; /* Ajouté pour assurer que le curseur change au survol */
+    flex: 1 1 calc(50% - 20px); /* Ajouté pour s'assurer que les éléments prennent 50% de la largeur avec une marge */
+    margin: 5px; /* Ajouté pour espacer les éléments */
 }
 
 .skills-category ul li:hover {
@@ -46,4 +49,18 @@
     border-radius: 5px;
     transform: scale(1.1);
     font-size: medium;
+}
+
+/* Média queries pour tablette */
+@media (max-width: 768px) {
+    .skills-category ul li {
+        flex: 1 1 calc(30% - 20px); /* 2 éléments par ligne */
+    }
+}
+
+/* Média queries pour mobile */
+@media (max-width: 480px) {
+    .skills-category ul li {
+        flex: 1 1 calc(50% - 20px); /* 2 éléments par ligne */
+    }
 }
