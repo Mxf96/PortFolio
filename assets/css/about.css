@@ -99,9 +99,22 @@
     
     .cv-overlay {
         display: none; /* Caché par défaut */
+        margin-top: -80px;
+        margin-left: -190px;
+        width: 800px; /* Prendre toute la largeur de l'écran */
+        height: 800px; /* Prendre toute la hauteur de l'écran */
+        background: rgba(0, 0, 0, 0.8); /* Fond sombre semi-transparent */
+        z-index: 1000; /* S'assurer que l'overlay est au-dessus des autres éléments */
+    }
+}
+
+@media (max-width: 376px) {
+    .cv-overlay {
+        display: none; /* Caché par défaut */
+        margin-top: -60px;
         margin-left: -162px;
         width: 700px; /* Prendre toute la largeur de l'écran */
-        height: 700px; /* Prendre toute la hauteur de l'écran */
+        height: 800px; /* Prendre toute la hauteur de l'écran */
         background: rgba(0, 0, 0, 0.8); /* Fond sombre semi-transparent */
         z-index: 1000; /* S'assurer que l'overlay est au-dessus des autres éléments */
     }
@@ -109,8 +122,9 @@
 
 @media (max-width: 320px) {
     .cv-overlay {
+        margin-top: -60px;
         margin-left: -140px;
         width: 600px; /* Prendre toute la largeur de l'écran */
-        height: 600px; /* Prendre toute la hauteur de l'écran */
+        height: 800px; /* Prendre toute la hauteur de l'écran */
     }
 }
