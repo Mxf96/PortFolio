@@ -20,7 +20,7 @@ h1,h2,h3,p,a,ul,li,i,img,span {
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 20px;
     text-align: center;
 }
 
@@ -28,11 +28,18 @@ header nav a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+    transition: background-color 0.5s; 
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: larger;
+    color: #333; 
+    border-radius: 5px;
+    padding: 5px;
 }
+
 
 /* Section principale */
 section {

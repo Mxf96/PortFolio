@@ -33,6 +33,7 @@
 }
 
 .skills-category ul li {
+    text-align: center;
     background-color: #333;
     color: #fff;
     padding: 8px 20px;
