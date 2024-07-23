@@ -1,186 +1,380 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/skills.css">
-    <link rel="stylesheet" href="./assets/css/form.css">
-    <link rel="stylesheet" href="./assets/css/project.css">
-    <link rel="stylesheet" href="./assets/css/popup.css">
-    <link rel="stylesheet" href="./assets/css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/project.css" />
+    <link rel="stylesheet" href="./assets/css/popup.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="#about">À propos</a>
-            <a href="#projects">Projets</a>
-            <a href="#skills">Compétences</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
     <section id="about">
-        <div class="about-content">
-            <h1>À propos de moi</h1>
-            <p>Je suis Maxime FALCETTA, un passionné Développeur Web. J'ai obtenu un titre RNCP de niveau 5 équivalent à un Bac+2, consolidant mes connaissances et compétences dans ce domaine dynamique. Ma formation s'est déroulée à la Metz Numeric School, où j'ai acquis une année d'expérience intensive en développement web.</p>
+      <div class="about-content">
+        <h1>À propos de moi</h1>
+        <p>
+          Je suis Maxime FALCETTA, un passionné Développeur Web. J'ai obtenu un
+          titre RNCP de niveau 5 équivalent à un Bac+2, consolidant mes
+          connaissances et compétences dans ce domaine dynamique. Ma formation
+          s'est déroulée à la Metz Numeric School, où j'ai acquis une année
+          d'expérience intensive en développement web.
+        </p>
+      </div>
+      <div class="about-cv">
+        <img
+          src="./assets/picture/C.V.png"
+          alt="CV de Maxime FALCETTA"
+          class="cv-image" />
+        <div class="cv-overlay" id="cvOverlay">
+          <div class="cv-popup">
+            <img
+              src="./assets/picture/C.V.png"
+              alt="CV Agrandi de Maxime FALCETTA"
+              class="cv-large" />
+            <span class="close">&times;</span>
+          </div>
         </div>
-        <div class="about-cv">
-            <img src="./assets/picture/C.V.png" alt="CV de Maxime FALCETTA" class="cv-image">
-            <div class="cv-overlay" id="cvOverlay">
-                <div class="cv-popup">
-                    <img src="./assets/picture/C.V.png" alt="CV Agrandi de Maxime FALCETTA" class="cv-large">
-                    <span class="close">&times;</span>
-                </div>
-            </div>
-        </div>        
-    </section>        
+      </div>
+    </section>
     <section id="projects">
-        <h2>Mes Projets</h2>
-        <article>
-            <div class="project-content">
-                <h3>SpeakEasy</h3>
-                <p>Projet Fil Rouge en PHP. Une application dédiée à la facilitation de la communication.</p>
-                <a href="https://github.com/Mxf96/SpeakEasy" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-            </div>
-            <div class="project-image">
-                <img src="./assets/picture/SpeakEasy(1).png" alt="SpeakEasy Project Image">
-            </div>
-        </article> 
-        <article>
-            <div class="project-content">
-                <h3>Quiz-XV-de-France</h3>
-                <p>AdverGame Challenge 2023 en PHP. Un jeu de quiz interactif sur le rugby.</p>
-                <a href="https://github.com/Mxf96/Quiz-XV-de-France" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-            </div>
-            <div class="project-image">
-                <img src="./assets/picture/Rugby Word Cup 2023(2).png" alt="Quiz XV de France Project Image">
-            </div>
-        </article>
-        <article>
-            <div class="project-content">
-                <h3>Outils en ligne</h3>
-                <p>Ce projet est un convertisseur universel qui inclut la conversion de mesures, de poids et de monnaies.</p>
-                <a href="https://github.com/Mxf96/Outils-en-Ligne" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-            </div>
-            <div class="project-image">
-                <img src="./assets/picture/Outils.png" alt="Quiz XV de France Project Image">
-            </div>
-        </article>
-        <article>
-            <div class="project-content">
-                <h3>AzerType</h3>
-                <p>Projet OpenClassRooms en JavaScript. Un jeu pour améliorer la vitesse de frappe au clavier.</p>
-                <a href="https://github.com/Mxf96/AzerType" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-            </div>
-            <div class="project-image">
-                <img src="./assets/picture/azerty.png" alt="AzerType Project Image">
-            </div>
-        </article>
-        <article>
-            <div class="project-content">
-                <h3>TaskWave</h3>
-                <p>TaskWave est une application web qui simplifie la gestion des tâches, améliore la productivité et offre une interface intuitive pour planifier, organiser et suivre les projets.</p>
-                <a href="https://github.com/Mxf96/TaskWave" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-            </div>
-            <div class="project-image">
-                <img src="./assets/picture/TaskWave.png" alt="TaskWave Project Image">
-            </div>
-        </article>
-        <article>
-            <div class="project-content">
-                <h3>Pharamacie-Naturabio</h3>
-                <p>Projet E-Commerce en PHP. Un site web pour une pharmacie proposant des produits naturels.</p>
-                <a href="https://github.com/Mxf96/Pharamacie_Naturabio" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub</a>
-            </div>
-            <div class="project-image">
-                <img src="./assets/picture/Pharma2.png" alt="Pharamacie Naturabio Project Image">
-            </div>
-        </article>
-    </section>    
+      <h2>Mes Projets</h2>
+      <article>
+        <div class="project-content">
+          <h3>QuickLinks</h3>
+          <p>
+            QuickLinks est une page web simple qui offre des redirections vers
+            plusieurs sites web utiles.
+          </p>
+          <a
+            href="https://github.com/Mxf96/QuickLinks"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/QuickLinks.png"
+            alt="QuickLinks Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>NotifyBots</h3>
+          <p>
+            Ce site Web permet aux utilisateurs d'inviter le NotifyBot sur leurs
+            serveurs Discord.
+          </p>
+          <a
+            href="https://github.com/Mxf96/NotifyBots"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/NotifyBots.png"
+            alt="NotifyBots Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>TaskWaves</h3>
+          <p>
+            TaskWave est une application web de gestion de tâches basée sur le
+            navigateur.
+          </p>
+          <a
+            href="https://github.com/Mxf96/TaskWaves"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/TaskWaves.png"
+            alt="TaskWaves Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>SpeakEasy</h3>
+          <p>
+            Projet Fil Rouge en PHP. Une application dédiée à la facilitation de
+            la communication.
+          </p>
+          <a
+            href="https://github.com/Mxf96/SpeakEasy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/SpeakEasy.png"
+            alt="SpeakEasy Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>Quiz-XV-de-France</h3>
+          <p>
+            AdverGame Challenge 2023 en PHP. Un jeu de quiz interactif sur le
+            rugby.
+          </p>
+          <a
+            href="https://github.com/Mxf96/Quiz-XV-de-France"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/Rugby Word Cup 2023.png"
+            alt="Quiz XV de France Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>Outils en ligne</h3>
+          <p>
+            Ce projet est un convertisseur universel qui inclut la conversion de
+            mesures, de poids et de monnaies.
+          </p>
+          <a
+            href="https://github.com/Mxf96/Outils-en-Ligne"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/Outils.png"
+            alt="Quiz XV de France Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>AzerType</h3>
+          <p>
+            Projet OpenClassRooms en JavaScript. Un jeu pour améliorer la
+            vitesse de frappe au clavier.
+          </p>
+          <a
+            href="https://github.com/Mxf96/AzerType"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img src="./assets/picture/azerty.png" alt="AzerType Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>TaskWave</h3>
+          <p>
+            TaskWave est une application web qui simplifie la gestion des
+            tâches, améliore la productivité et offre une interface intuitive
+            pour planifier, organiser et suivre les projets.
+          </p>
+          <a
+            href="https://github.com/Mxf96/TaskWave"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/TaskWave.png"
+            alt="TaskWave Project Image" />
+        </div>
+      </article>
+      <article>
+        <div class="project-content">
+          <h3>Pharamacie-Naturabio</h3>
+          <p>
+            Projet E-Commerce en PHP. Un site web pour une pharmacie proposant
+            des produits naturels.
+          </p>
+          <a
+            href="https://github.com/Mxf96/Pharamacie_Naturabio"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Voir le projet sur GitHub</a
+          >
+        </div>
+        <div class="project-image">
+          <img
+            src="./assets/picture/Pharma.png"
+            alt="Pharamacie Naturabio Project Image" />
+        </div>
+      </article>
+    </section>
     <section id="skills">
-        <h2>Compétences</h2>
-        <div class="skills-category">
-            <h3>Front-end</h3>
-            <ul class="skills-category">
-                <li data-popup="HTML est un langage de balisage utilisé pour structurer les pages web.">HTML</li>
-                <li data-popup="CSS est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML.">CSS</li>
-                <li data-popup="JavaScript est un langage de programmation utilisé pour rendre les pages web interactives.">JavaScript</li>
-                <li data-popup="React est une bibliothèque JavaScript utilisée pour créer des interfaces utilisateur.">React</li>
-                <li data-popup="Angular est un framework JavaScript utilisé pour créer des applications web à grande échelle.">Angular</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Back-end</h3>
-            <ul>
-                <li data-popup="Node.js est une plateforme logicielle construite sur le moteur JavaScript V8 de Chrome. Elle est utilisée pour créer des applications côté serveur et permet d'exécuter du code JavaScript côté serveur.">Node.js</li>
-                <li data-popup="PHP est un langage de script côté serveur principalement utilisé pour le développement web. Il est souvent intégré dans le code HTML et peut être utilisé pour créer des pages web dynamiques.">PHP</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Base de Données</h3>
-            <ul>
-                <li data-popup="phpMyAdmin (MariaDB) est une interface web open source pour la gestion de bases de données MySQL et MariaDB. Elle permet aux utilisateurs d'interagir avec les bases de données via une interface graphique conviviale.">phpMyAdmin (MariaDB)</li>
-                <li data-popup="Firebase est une plateforme de développement d'applications mobiles et web développée par Google. Elle offre une variété de services backend, y compris l'authentification des utilisateurs, la base de données en temps réel, le stockage de fichiers, etc.">Firebase</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Outils de Conception et Développement</h3>
-            <ul>
-                <li data-popup="Figma est un outil de conception d'interfaces utilisateur et de prototypage collaboratif basé sur le web. Il permet aux équipes de travailler ensemble sur des projets de conception en temps réel.">Figma</li>
-                <li data-popup="WAMP Server est un environnement de développement web pour Windows. Il comprend Apache, MySQL et PHP, qui sont tous des composants essentiels pour le développement et le test d'applications web.">WAMP Server</li>
-                <li data-popup="Visual Studio Code est un éditeur de code source gratuit et open source développé par Microsoft. Il est très populaire auprès des développeurs en raison de ses nombreuses fonctionnalités, de son support pour de nombreux langages de programmation et de son extensibilité.">Visual Studio Code</li>
-                <li data-popup="Oracle VM est une solution de virtualisation d'entreprise développée par Oracle. Elle permet aux utilisateurs de créer et de gérer des machines virtuelles sur des serveurs physiques.">Oracle VM</li>
-                <li data-popup="PuTTY est un client SSH et Telnet gratuit et open source pour les plateformes Windows et Unix. Il est largement utilisé pour se connecter à des serveurs distants de manière sécurisée.">PuTTY</li>
-                <li data-popup="WinSCP est un client SFTP, FTP, WebDAV et SCP gratuit pour Windows. Il permet aux utilisateurs de transférer des fichiers entre leur ordinateur local et un serveur distant de manière sécurisée.">WinSCP</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Outils Graphiques et Créatifs</h3>
-            <ul>
-                <li data-popup="Canva est un outil de conception graphique en ligne qui permet aux utilisateurs de créer une variété de designs, tels que des graphiques sociaux, des invitations, des présentations et plus encore, en utilisant des modèles prédéfinis et des éléments graphiques.">Canva</li>
-                <li data-popup="Dalle 3 - Cette ligne ne semble pas avoir de description claire. Il est possible qu'elle fasse référence à un élément spécifique qui nécessite plus de contexte pour être expliqué.">Dalle 3</li>
-            </ul>
-        </div>
-        <div class="skills-category">
-            <h3>Gestion de Version</h3>
-            <ul>
-                <li data-popup="GitHub est une plateforme de développement logiciel basée sur Git. Elle offre des fonctionnalités de gestion de versions, de collaboration et d'hébergement de code source pour les projets logiciels.">GitHub</li>
-            </ul>
-        </div>
+      <h2>Compétences</h2>
+      <div class="skills-category">
+        <h3>Front-end</h3>
+        <ul class="skills-category">
+          <li
+            data-popup="HTML est un langage de balisage utilisé pour structurer les pages web.">
+            HTML
+          </li>
+          <li
+            data-popup="CSS est un langage de style utilisé pour décrire la présentation d'un document écrit en HTML.">
+            CSS
+          </li>
+          <li
+            data-popup="JavaScript est un langage de programmation utilisé pour rendre les pages web interactives.">
+            JavaScript
+          </li>
+          <li
+            data-popup="React est une bibliothèque JavaScript utilisée pour créer des interfaces utilisateur.">
+            React
+          </li>
+          <li
+            data-popup="Angular est un framework JavaScript utilisé pour créer des applications web à grande échelle.">
+            Angular
+          </li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Back-end</h3>
+        <ul>
+          <li
+            data-popup="Node.js est une plateforme logicielle construite sur le moteur JavaScript V8 de Chrome. Elle est utilisée pour créer des applications côté serveur et permet d'exécuter du code JavaScript côté serveur.">
+            Node.js
+          </li>
+          <li
+            data-popup="PHP est un langage de script côté serveur principalement utilisé pour le développement web. Il est souvent intégré dans le code HTML et peut être utilisé pour créer des pages web dynamiques.">
+            PHP
+          </li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Base de Données</h3>
+        <ul>
+          <li
+            data-popup="phpMyAdmin (MariaDB) est une interface web open source pour la gestion de bases de données MySQL et MariaDB. Elle permet aux utilisateurs d'interagir avec les bases de données via une interface graphique conviviale.">
+            phpMyAdmin (MariaDB)
+          </li>
+          <li
+            data-popup="Firebase est une plateforme de développement d'applications mobiles et web développée par Google. Elle offre une variété de services backend, y compris l'authentification des utilisateurs, la base de données en temps réel, le stockage de fichiers, etc.">
+            Firebase
+          </li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Outils de Conception et Développement</h3>
+        <ul>
+          <li
+            data-popup="Figma est un outil de conception d'interfaces utilisateur et de prototypage collaboratif basé sur le web. Il permet aux équipes de travailler ensemble sur des projets de conception en temps réel.">
+            Figma
+          </li>
+          <li
+            data-popup="WAMP Server est un environnement de développement web pour Windows. Il comprend Apache, MySQL et PHP, qui sont tous des composants essentiels pour le développement et le test d'applications web.">
+            WAMP Server
+          </li>
+          <li
+            data-popup="Visual Studio Code est un éditeur de code source gratuit et open source développé par Microsoft. Il est très populaire auprès des développeurs en raison de ses nombreuses fonctionnalités, de son support pour de nombreux langages de programmation et de son extensibilité.">
+            Visual Studio Code
+          </li>
+          <li
+            data-popup="Oracle VM est une solution de virtualisation d'entreprise développée par Oracle. Elle permet aux utilisateurs de créer et de gérer des machines virtuelles sur des serveurs physiques.">
+            Oracle VM
+          </li>
+          <li
+            data-popup="PuTTY est un client SSH et Telnet gratuit et open source pour les plateformes Windows et Unix. Il est largement utilisé pour se connecter à des serveurs distants de manière sécurisée.">
+            PuTTY
+          </li>
+          <li
+            data-popup="WinSCP est un client SFTP, FTP, WebDAV et SCP gratuit pour Windows. Il permet aux utilisateurs de transférer des fichiers entre leur ordinateur local et un serveur distant de manière sécurisée.">
+            WinSCP
+          </li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Outils Graphiques et Créatifs</h3>
+        <ul>
+          <li
+            data-popup="Canva est un outil de conception graphique en ligne qui permet aux utilisateurs de créer une variété de designs, tels que des graphiques sociaux, des invitations, des présentations et plus encore, en utilisant des modèles prédéfinis et des éléments graphiques.">
+            Canva
+          </li>
+          <li
+            data-popup="Dalle 3 - Cette ligne ne semble pas avoir de description claire. Il est possible qu'elle fasse référence à un élément spécifique qui nécessite plus de contexte pour être expliqué.">
+            Dalle 3
+          </li>
+        </ul>
+      </div>
+      <div class="skills-category">
+        <h3>Gestion de Version</h3>
+        <ul>
+          <li
+            data-popup="GitHub est une plateforme de développement logiciel basée sur Git. Elle offre des fonctionnalités de gestion de versions, de collaboration et d'hébergement de code source pour les projets logiciels.">
+            GitHub
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="contact">
-        <h2>Contactez-moi</h2>
-        <form action="https://getform.io/f/24420f0e-ca8b-4d40-884c-de5486793778" method="post">
-            <div>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Envoyer">
-            </div>
-        </form>
+      <h2>Contactez-moi</h2>
+      <form
+        action="https://getform.io/f/24420f0e-ca8b-4d40-884c-de5486793778"
+        method="post">
+        <div>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Envoyer" />
+        </div>
+      </form>
     </section>
     <footer>
-        <p>© 2023 Maxime FALCETTA. Tous droits réservés.</p>
-        <a href="https://www.linkedin.com/in/maxime-falcetta/" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Mxf96" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
-        </a>
+      <p>© 2023 Maxime FALCETTA. Tous droits réservés.</p>
+      <a
+        href="https://www.linkedin.com/in/maxime-falcetta/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a
+        href="https://github.com/Mxf96"
+        target="_blank"
+        rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
     </footer>
-</body>
-<script src="./script.js"></script>
+  </body>
+  <script src="./script.js"></script>
 </html>
