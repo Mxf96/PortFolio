@@ -44,6 +44,6 @@
 .skills-category ul li:hover {
     background-color: #555;
     border-radius: 5px;
-    padding: 12px;
+    transform: scale(1.1);
     font-size: medium;
 }
