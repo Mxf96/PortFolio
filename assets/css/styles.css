@@ -46,7 +46,7 @@ a {
   text-decoration: none;
 }
 
-a::before {
+.project-content a::before {
   content: '';
   position: absolute;
   bottom: 0;
