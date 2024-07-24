@@ -36,19 +36,19 @@
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 8px 20px;
+    padding: 8px 10px;
     border-radius: 10px; 
     font-size: 1em;
     transition: background-color 0.3s; 
-    cursor: pointer; /* Ajouté pour assurer que le curseur change au survol */
-    flex: 1 1 calc(50% - 20px); /* Ajouté pour s'assurer que les éléments prennent 50% de la largeur avec une marge */
-    margin: 5px; /* Ajouté pour espacer les éléments */
+    cursor: pointer; 
+    flex: 1 1 calc(50% - 20px);
+    margin: 5px;
 }
 
 .skills-category ul li:hover {
     background-color: #555;
     border-radius: 5px;
-    transform: scale(1.1);
+    transform: scale(1.05);
     font-size: medium;
 }
 
