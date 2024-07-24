@@ -28,18 +28,27 @@ header nav a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
-    transition: background-color 0.5s; 
+    position: relative; 
 }
 
 header nav a:hover {
-    background-color: #fff;
     text-decoration: none;
-    font-size: larger;
-    color: #333; 
-    border-radius: 5px;
-    padding: 5px;
 }
 
+header nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    transition: width 0.5s ease;
+}
+
+header nav a:hover::before {
+    width: 100%;
+}
 
 /* Section principale */
 section {
@@ -47,7 +56,7 @@ section {
     margin: 0 15% 1% ;
 }
   
-a {
+.project-content a {
   color: #555;
   position: relative;
   text-decoration: none;
@@ -56,7 +65,7 @@ a {
 .project-content a::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 0;
   height: 3px;
@@ -64,13 +73,12 @@ a {
   transition: width 0.5s ease;
 }
 
-a:hover::before {
+.project-content a:hover::before {
   width: 100%;
 }
 
-a:hover {
+.project-content a:hover {
     color: #333;
-    padding: 3px;
 }
 
 /* À propos de moi */
